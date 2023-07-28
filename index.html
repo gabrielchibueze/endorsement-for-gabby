@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    </head>
+    <body class="container">
+        <img src="images/freddie.png" >
+        <h2>We ae the Champions</h2>
+        <textarea name = "text" id="input-el"  placeholder="Write your endorsement for Gabby here"></textarea>
+        <div class="clients">   
+            <button id="from-btn" onclick="openFromForm()">From</button>
+            <div class="from-form-popup" id="from-form">
+                <form action="/action_page.php" class="from-form-container">
+                    <label for="email"><b>Enter your email</b></label>
+                    <input type="email" placeholder="Enter your email" name="email" required>
+                    <label for="First-name">First name</label>
+                    <input type="text" placeholder="Enter your first name" name="first-name" required>
+                    <div>    
+                        <button type="submit" id="ok-btn">Ok</button>
+                        <button type="button" id="cancel-btn" onclick="closeForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <button id="to-btn">To</button>
+        <div>
+        <button id="publish-btn">Publish</button>
+        <h3>- Endorsements -</h3>
+        <ul id="endorsement-list">
+        </ul>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
